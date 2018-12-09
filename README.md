@@ -5,7 +5,7 @@ I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin
 #### Install:
 ```
 git clone https://github.com/Raabi91/filament_rounout_Repetier
-cd /filament_rounout_Repetier
+cd filament_rounout_Repetier
 sh install_filament.sh
 ```
 

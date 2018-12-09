@@ -62,6 +62,6 @@ sleep 1
 echo "#######Variable End#########" >> Filament_config.sh
 sleep 1
 chmod 755 filament.sh
-
+chmod 755 Filament_config.sh
 
 exit 1
