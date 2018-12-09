@@ -45,7 +45,7 @@ fi
 
 
 sleep 1
-echo "#######Variable#########" > Filament_config.sh
+echo "#######Server/Sensor Config#########" > Filament_config.sh
 sleep 1
 echo "ip="$ip"" >> Filament_config.sh
 sleep 1
@@ -59,7 +59,7 @@ echo "sensor="$sensor"" >> Filament_config.sh
 sleep 1
 echo "pin="$pin"" >> Filament_config.sh
 sleep 1
-echo "#######Variable End#########" >> Filament_config.sh
+echo "#######Config End#########" >> Filament_config.sh
 sleep 1
 chmod 755 filament.sh
 chmod 755 Filament_config.sh
