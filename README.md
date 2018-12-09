@@ -18,13 +18,13 @@ Server Ip --> normaly loalhost
 
 Server Port --> normaly 3344
 
-Printer Name See --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png
+Printer Name See --> <https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png>
 
-APIkey see --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png
+APIkey see --> <https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png>
 
 Sensor --> Is Your sensor (without Filament) normaly closed use 0 or normaly Open use 1
 
-Pin --> Gpio Pin where your sensor is connected (see http://wiringpi.com/pins/ use WiringPi pin )
+Pin --> Gpio Pin where your sensor is connected (see <http://wiringpi.com/pins/> use WiringPi pin )
 ```
 
 the wee need the automatic start:
