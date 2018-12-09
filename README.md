@@ -9,7 +9,7 @@ cd filament_rounout_Repetier
 sh install_filament.sh
 ```
 
-Input You Settings:
+Input Your Settings in putty Wenn you will ask:
 
 
 
