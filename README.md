@@ -17,7 +17,7 @@ Server Ip --> normaly loalhost
 
 Server Port --> normaly 3344
 
-Printer Name See --> <a href="https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png"</a>
+Printer Name See --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png
 
 APIkey see --> [https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png](https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png)
 
@@ -27,7 +27,7 @@ Pin --> Gpio Pin where your sensor is connected (see [http://wiringpi.com/pins/]
 
 
 
-the wee need the automatic start:
+the we need the automatic start for the script:
 ```
 sudo nano /etc/rc.local
 ```
