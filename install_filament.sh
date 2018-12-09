@@ -6,15 +6,15 @@ hash -r
 echo -e "\n\n========= Filament - Installation Script ==========="
 echo -e "\n\nServer Ip:"
 read ip
-echo "Server port"
+echo "Server port:"
 read port
-echo "Printer Name"
+echo "Printer Name:"
 read printer
-echo "API Key"
+echo "API Key:"
 read apikey
-echo "Sensor (normaly open(1)/closed(0))"
+echo "Sensor (normaly open(1)/closed(0)):"
 read sensor
-echo "gpio Pin Use WiringPi Pin"
+echo "Gpio Pin Use WiringPi Pin:"
 read pin
 
 
