@@ -19,7 +19,7 @@ Server Port --> normally 3344
 
 Printer Name See --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png
 
-APIkey see --> [https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png](https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png)
+API-key see --> [https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png](https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png)
 
 Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally Open use 1
 
