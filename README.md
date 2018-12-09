@@ -13,7 +13,7 @@ Input You Settings:
 
 
 
-Server Ip --> normaly loalhost
+Server Ip --> normaly localhost
 
 Server Port --> normaly 3344
 
