@@ -47,7 +47,7 @@ exit with Strg+X
 
 then reboot the pi
 ```
-sudo Reboot
+sudo reboot
 ```
 
 #### How Upgrade the script
