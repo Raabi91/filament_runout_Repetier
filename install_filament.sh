@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sudo apt-get purge wiringpi
-hash -r
+sudo apt install wiringpi
 
 echo -e "\n\n========= Filament - Installation Script ==========="
 echo -e "\n\nServer Ip:"
