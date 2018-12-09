@@ -53,3 +53,9 @@ cd ~/filament_rounout_Repetier
 git pull
 sudo reboot
 ```
+
+
+###How Edit my Server ans sensor config
+```
+sudo nano /home/pi/filament_rounout_Repetier/Filament_config.sh
+```
