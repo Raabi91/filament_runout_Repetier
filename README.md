@@ -1,5 +1,48 @@
 # filament_rounout_Repetier
 Filament Rounout Script for Repetier Server
 
+I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin
 
 Install:
+
+$ git clone https://github.com/Raabi91/filament_rounout_Repetier
+
+ $ cd /filament_rounout_Repetier
+ 
+ $ sh install_filament.sh
+
+Input You Settings:
+
+Server Ip --> normaly loalhost
+
+Server Port --> normaly 3344
+
+Printer Name See --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png
+
+APIkey see --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png
+
+Sensor --> Is Your sensor (without Filament) normaly closed use 0 or normaly Open use 1
+
+Pin --> Gpio Pin where your sensor is connected (see http://wiringpi.com/pins/ use WiringPi pin )
+
+
+the wee need the automatic start:
+
+sudo nano /etc/rc.local
+
+put this line's
+
+
+# Filament Rounout starten
+
+/home/pi/filament_rounout.sh &
+
+bevor exit 0
+
+Save with Strg+O
+Exit with Strg+X
+
+sudo Reboot
+
+
+
