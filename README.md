@@ -27,7 +27,7 @@ Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https:
 
 
 
-then we need the automatic start for the script:
+then we need a automatic start for the script:
 ```
 sudo nano /etc/rc.local
 ```
