@@ -43,7 +43,7 @@ Save with Strg+O
 
 exit with Strg+X
 
-then reboot
+then reboot the pi
 ```
 sudo Reboot
 ```
