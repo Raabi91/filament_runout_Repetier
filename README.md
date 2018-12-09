@@ -62,3 +62,9 @@ sudo reboot
 ```
 sudo nano /home/pi/filament_rounout_Repetier/Filament_config.sh
 ```
+
+After Edit the Config do a Reboot
+
+```
+sudo reboot
+```
