@@ -35,7 +35,7 @@ put this line's
 
 ```
 # Filament Rounout starten
-/home/pi/filament_rounout_Repetier/filament_rounout.sh &
+/home/pi/filament_rounout_Repetier/filament.sh &
 ```
 bevor
 ```
