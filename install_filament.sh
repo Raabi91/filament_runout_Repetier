@@ -47,17 +47,17 @@ fi
 sleep 1
 echo "#######Variable#########" > Filament_config.sh
 sleep 1
-echo "ip=$ip2" >> Filament_config.sh
+echo "ip="$ip"" >> Filament_config.sh
 sleep 1
-echo "port=$port" >> Filament_config.sh
+echo "port="$port"" >> Filament_config.sh
 sleep 1
-echo "printer=$printer" >> Filament_config.sh
+echo "printer="$printer"" >> Filament_config.sh
 sleep 1
-echo "apikey=$apikey" >> Filament_config.sh
+echo "apikey="$apikey"" >> Filament_config.sh
 sleep 1
-echo "sensor=$sensor" >> Filament_config.sh
+echo "sensor="$sensor"" >> Filament_config.sh
 sleep 1
-echo "pin=$pin" >> Filament_config.sh
+echo "pin="$pin"" >> Filament_config.sh
 sleep 1
 echo "#######Variable End#########" >> Filament_config.sh
 sleep 1
