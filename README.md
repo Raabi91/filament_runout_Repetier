@@ -58,7 +58,7 @@ sudo reboot
 ```
 
 
-#### How Edit my Server ans sensor config
+#### How Edit my Server and sensor config
 ```
 sudo nano /home/pi/filament_rounout_Repetier/Filament_config.sh
 ```
