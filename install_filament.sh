@@ -14,7 +14,7 @@ echo "API Key"
 read apikey
 echo "Sensor (normaly open(1)/closed(0))"
 read sensor
-echo "gpio Pin Use wPi"
+echo "gpio Pin Use WiringPi Pin"
 read pin
 
 
