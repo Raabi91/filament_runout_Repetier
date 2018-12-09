@@ -1,9 +1,9 @@
-#### Filament Rounout Script for Repetier Server on a Raspberry PI
+# Filament Rounout Script for Repetier Server on a Raspberry PI
 
 I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin. 
 If ohter sensors work let me know ist
 
-#### Install:
+## Install:
 ```
 git clone https://github.com/Raabi91/filament_rounout_Repetier
 cd filament_rounout_Repetier
@@ -51,7 +51,7 @@ then reboot the pi
 sudo reboot
 ```
 
-#### How Upgrade the script
+## How Upgrade the script
 ```
 cd ~/filament_rounout_Repetier
 git pull
@@ -59,7 +59,7 @@ sudo reboot
 ```
 
 
-#### How Edit my Server and sensor config
+## How Edit my Server and sensor config
 ```
 sudo nano /home/pi/filament_rounout_Repetier/Filament_config.sh
 ```
