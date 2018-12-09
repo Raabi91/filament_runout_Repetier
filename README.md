@@ -13,21 +13,21 @@ Input You Settings:
 
 
 
-Server Ip --> normaly localhost
+Server Ip --> normall localhost
 
-Server Port --> normaly 3344
+Server Port --> normally 3344
 
 Printer Name See --> https://www.repetier-server.com/en/wp-content/uploads/2017/02/s3d2.png
 
 APIkey see --> [https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png](https://www.repetier-server.com/en/wp-content/uploads/2017/02/33d3.png)
 
-Sensor --> Is Your sensor (without Filament) normaly closed use 0 or normaly Open use 1
+Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally Open use 1
 
 Pin --> Gpio Pin where your sensor is connected (see [http://wiringpi.com/pins/](http://wiringpi.com/pins/) use WiringPi pin )
 
 
 
-the we need the automatic start for the script:
+then we need the automatic start for the script:
 ```
 sudo nano /etc/rc.local
 ```
