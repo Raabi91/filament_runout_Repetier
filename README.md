@@ -51,4 +51,9 @@ then reboot
 sudo Reboot
 ```
 
-
+How Upgrade the script
+```
+cd ~/filament_rounout_Repetier
+git pull
+sudo reboot
+```
