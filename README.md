@@ -54,6 +54,7 @@ sudo reboot
 ## How Upgrade the script
 ```
 cd ~/filament_runout_Repetier
+git reset --hard HEAD
 git pull
 sudo reboot
 ```
