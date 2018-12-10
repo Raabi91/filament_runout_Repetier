@@ -1,12 +1,12 @@
-# Filament Rounout Script for Repetier Server for Raspberry PI
+# Filament Runout Script for Repetier Server for Raspberry PI
 
 I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin. 
 If ohter sensors work let me know ist
 
 ## Install:
 ```
-git clone https://github.com/Raabi91/filament_rounout_Repetier
-cd filament_rounout_Repetier
+git clone https://github.com/Raabi91/filament_runout_Repetier
+cd filament_runout_Repetier
 sh install_filament.sh
 ```
 
@@ -24,7 +24,7 @@ API-key see --> [https://www.repetier-server.com/en/wp-content/uploads/2017/02/3
 
 Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally Open use 1
 
-Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https://github.com/Raabi91/filament_rounout_Repetier/blob/master/WiringPi_Pinout.md) use wPI column for pin number )
+Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https://github.com/Raabi91/filament_runout_Repetier/blob/master/WiringPi_Pinout.md) use wPI column for pin number )
 
 
 
@@ -35,8 +35,8 @@ sudo nano /etc/rc.local
 put this line's
 
 ```
-# Filament Rounout starten
-sh /home/pi/filament_rounout_Repetier/filament.sh &
+# Filament Runout starten
+sh /home/pi/filament_runout_Repetier/filament.sh &
 ```
 bevor
 ```
@@ -53,7 +53,7 @@ sudo reboot
 
 ## How Upgrade the script
 ```
-cd ~/filament_rounout_Repetier
+cd ~/filament_runout_Repetier
 git pull
 sudo reboot
 ```
@@ -61,7 +61,7 @@ sudo reboot
 
 ## How Edit my Server and sensor config
 ```
-sudo nano /home/pi/filament_rounout_Repetier/Filament_config.sh
+sudo nano /home/pi/filament_runout_Repetier/Filament_config.sh
 ```
 
 After Edit the Config do a Reboot
