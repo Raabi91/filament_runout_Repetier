@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAMENDATEI=Filament_config.sh
-. /home/pi/filament_rounout_Repetier/$NAMENDATEI
+. /home/pi/filament_runout_Repetier/$NAMENDATEI
 
 gpio mode $pin up
 gpio mode $pin in
