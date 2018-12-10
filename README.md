@@ -14,7 +14,7 @@ Input Your Settings in putty Wenn you will ask:
 
 
 
-Server Ip --> normall localhost
+Server Ip --> normally localhost
 
 Server Port --> normally 3344
 
