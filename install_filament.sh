@@ -2,7 +2,7 @@
 
 sudo apt install wiringpi
 
-echo -e "\n\n========= Filament - Installation Script ==========="
+echo -e "\n\n========= Filament Runout - Installation Script ==========="
 echo -e "\n\nServer Ip:"
 read ip
 echo "Server port:"
