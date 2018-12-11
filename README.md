@@ -26,25 +26,7 @@ Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally O
 
 Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https://github.com/Raabi91/filament_runout_Repetier/blob/master/WiringPi_Pinout.md) use wPI column for pin number )
 
-
-
-then we need a automatic start for the script:
-```
-sudo nano /etc/rc.local
-```
-put this line's
-
-```
-# Filament Runout starten
-sh /home/pi/filament_runout_Repetier/filament.sh &
-```
-bevor
-```
-exit 0
-```
-Save with Strg+O
-
-exit with Strg+X
+wait a moment
 
 then reboot the pi
 ```
