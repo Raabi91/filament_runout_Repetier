@@ -63,10 +63,10 @@ sleep 1
 chmod 755 filament.sh
 chmod 755 Filament_config.sh
 
-echo -e "\n\n========= Filament Runout - install Autostart ==========="
 
-crontab -u pi -l | grep -v 'sh /home/pi/filament_runout_/filament.sh &'  | crontab -u pi -
+
+crontab -u pi -l | grep -v 'sh /home/pi/filament_runout_Repetier/filament.sh &'  | crontab -u pi -
 sleep 1
-(crontab -u pi -l ; echo "@reboot sh /home/pi/filament_runout_/filament.sh &") | crontab -u pi -
+(crontab -u pi -l ; echo "@reboot sh /home/pi/filament_runout_Repetier/filament.sh &") | crontab -u pi -
 
 exit 1
