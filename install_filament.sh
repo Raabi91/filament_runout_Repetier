@@ -45,25 +45,25 @@ fi
 
 sleep 1
 echo "#######Server/Sensor Config#########" > Filament_config.sh
-sleep 1
+
 echo "ip="$ip"" >> Filament_config.sh
-sleep 1
+
 echo "port="$port"" >> Filament_config.sh
-sleep 1
+
 echo "printer="$printer"" >> Filament_config.sh
-sleep 1
+
 echo "apikey="$apikey"" >> Filament_config.sh
-sleep 1
+
 echo "sensor="$sensor"" >> Filament_config.sh
-sleep 1
+
 echo "pin="$pin"" >> Filament_config.sh
-sleep 1
+
 echo "#######Config End#########" >> Filament_config.sh
 sleep 1
 chmod 755 filament.sh
 chmod 755 Filament_config.sh
 
-
+echo -e "\n\n========= Filament Runout - Installation Autostart ==========="
 
 crontab -u pi -l | grep -v 'sh /home/pi/filament_runout_Repetier/filament.sh &'  | crontab -u pi -
 sleep 1
