@@ -3,46 +3,47 @@
 sudo apt install wiringpi
 
 echo -e "\n\n========= Filament Runout - Installation Script ==========="
-echo -e "\n\nServer Ip:"
+echo -e "\n\n========= pleas input your settings description on github ==========="
+echo -e "\n\nyour server Ip:"
 read ip
-echo "Server port:"
+echo "your server port:"
 read port
-echo "Printer Name:"
+echo "your printername:"
 read printer
-echo "API Key:"
+echo "your apikey:"
 read apikey
-echo "Sensor (normaly open(1)/closed(0)):"
+echo "your sensor (normaly open(1)/closed(0)):"
 read sensor
-echo "Gpio Pin use WiringPi Pin:"
+echo "your Gpio Pin (use WiringPi Pin):"
 read pin
 
-
+echo -e "\n\n========= check variables ==========="
 if [ -z "$ip" ] ; then
-    echo 'Server IP Eingeben!'
+    echo 'please enter server IP!'
     exit 1
 fi
 if [ -z "$port" ] ; then
-    echo 'Server port Eingeben!'
+    echo 'please enter server port!'
     exit 1
 fi
 if [ -z "$printer" ] ; then
-    echo 'Printer Name Eingeben!'
+    echo 'please enter printername!'
     exit 1
 fi
 if [ -z "$apikey" ] ; then
-    echo 'apikey Eingeben Eingeben!'
+    echo 'please enter apikey!'
     exit 1
 fi
 if [ -z "$sensor" ] ; then
-    echo 'normaly Open (0) or Closed (1)!'
+    echo 'please enter sensor (normaly open (0) or closed (1))!'
     exit 1
 fi
 if [ -z "$pin" ] ; then
-    echo 'Gpio pin Eingeben!'
+    echo 'please enter Gpio pin !'
     exit 1
 fi
 
-
+echo -e "\n\n========= creat Filament_config.sh ==========="
 sleep 1
 echo "#######Server/Sensor Config#########" > Filament_config.sh
 
@@ -63,10 +64,12 @@ sleep 1
 chmod 755 filament.sh
 chmod 755 Filament_config.sh
 
-echo -e "\n\n========= Filament Runout - Installation Autostart ==========="
+echo -e "\n\n========= installation autostart ==========="
 
 crontab -u pi -l | grep -v 'sh /home/pi/filament_runout_Repetier/filament.sh &'  | crontab -u pi -
 sleep 1
 (crontab -u pi -l ; echo "@reboot sh /home/pi/filament_runout_Repetier/filament.sh &") | crontab -u pi -
+
+echo -e "\n\n========= installation end ==========="
 
 exit 1

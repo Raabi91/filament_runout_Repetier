@@ -26,12 +26,21 @@ Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally O
 
 Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https://github.com/Raabi91/filament_runout_Repetier/blob/master/WiringPi_Pinout.md) use wPI column for pin number )
 
-wait a moment
+wait a moment the automatic startup will now set automaticly
 
 then reboot the pi
 ```
 sudo reboot
 ```
+
+if you have the first Version and use the new install_filament.sh pleas delete this line's:
+
+```
+# Filament Rounout starten
+#sh /home/pi/filament_runout_Repetier/filament.sh &
+```
+
+form /ect/rc.local
 
 ## How Upgrade the script
 ```
