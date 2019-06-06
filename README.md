@@ -71,7 +71,7 @@ sudo reboot
 Put at "Sensorname" the name of the sensor waht do you use under number in the installation script
 
 ```
-sudo nano /home/pi/filament_runout_Repetier/"Sensornumber"/Filament_config.sh
+sudo nano /home/pi/filament_runout_Repetier/sensor_"Sensornumber"/Filament_config.sh
 
 ```
 or use Ftp and search the file to edit and reupload it. the path is /home/pi/filament_runout_Repetier/"Sensornumber"/
