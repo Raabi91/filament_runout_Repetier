@@ -2,6 +2,7 @@
 
 V3 has some changes to use multiple Sensors wenn you will use  V2 or V1 then delete the old script complete
 the delete the old start scripts
+
 V1:
 ```
 # Filament Rounout starten
@@ -11,13 +12,13 @@ V1:
 form /ect/rc.local
 
 V2:
-'''
+```
 #sh /home/pi/filament_runout_Repetier/filament.sh &
-'''
+```
 from 
-'''
+```
 #crontab -e
-'''
+```
 
 # Filament Runout Script for Repetier Server for Raspberry PI
 
@@ -50,6 +51,8 @@ Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https:
 
 number  --> Number or Name to to distinguish the sensors (every sensor must have a unique id)
 
+
+
 wait a moment the automatic startup will now set automaticly
 
 then reboot the pi
@@ -79,6 +82,7 @@ sudo reboot
 crontab -e
 ```
 an delete the line who is for the sensor. 
+
 The can you delete the folder for the sensor to in /home/pi/filament_runout_Repetier/
 
 after all make a
