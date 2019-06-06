@@ -1,7 +1,8 @@
 #!/bin/sh
 
+MYDIR=`basename $(pwd)`
 NAMENDATEI=Filament_config.sh
-. /home/pi/filament_runout_Repetier/$NAMENDATEI
+. /home/pi/filament_runout_Repetier/$MYDIR/$NAMENDATEI
 
 gpio mode $pin up
 gpio mode $pin in
