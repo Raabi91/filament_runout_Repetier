@@ -6,18 +6,18 @@ the delete the old start scripts
 V1:
 ```
 # Filament Rounout starten
-#sh /home/pi/filament_runout_Repetier/filament.sh &
+sh /home/pi/filament_runout_Repetier/filament.sh &
 ```
 
 form /ect/rc.local
 
 V2:
 ```
-#sh /home/pi/filament_runout_Repetier/filament.sh &
+sh /home/pi/filament_runout_Repetier/filament.sh &
 ```
 from 
 ```
-#crontab -e
+crontab -e
 ```
 
 # Filament Runout Script for Repetier Server for Raspberry PI
