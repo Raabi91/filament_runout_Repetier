@@ -70,17 +70,17 @@ echo "pin="$pin"" >> Filament_config.sh
 
 echo "#######Config End#########" >> Filament_config.sh
 
-cp -l /home/pi/filament_runout_Repetier/filament.sh filament"$number".sh
+cp -l /home/pi/filament_runout_Repetier/filament.sh filament_"$number".sh
 
 sleep 1
-chmod 755 filament"$number".sh
+chmod 755 filament_"$number".sh
 chmod 755 Filament_config.sh
 
 echo -e "\n\n========= installation autostart ==========="
 
-crontab -u pi -l | grep -v "cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament"$number".sh  &"  | crontab -u pi -
+crontab -u pi -l | grep -v "cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament_"$number".sh  &"  | crontab -u pi -
 sleep 1
-(crontab -u pi -l ; echo "@reboot cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament"$number".sh  &") | crontab -u pi -
+(crontab -u pi -l ; echo "@reboot cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament_"$number".sh  &") | crontab -u pi -
 
 echo -e "\n\n========= installation end ==========="
 
