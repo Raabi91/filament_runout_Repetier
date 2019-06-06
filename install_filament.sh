@@ -16,6 +16,8 @@ echo "your sensor (normaly open(1)/closed(0)):"
 read sensor
 echo "your Gpio Pin (use WiringPi Pin):"
 read pin
+echo "the number of sensors is?: (1,2,3...)"
+read number
 
 echo -e "\n\n========= check variables ==========="
 if [ -z "$ip" ] ; then
@@ -42,6 +44,13 @@ if [ -z "$pin" ] ; then
     echo 'please enter Gpio pin !'
     exit 1
 fi
+if [ -z "$number" ] ; then
+    echo 'please enter number for sensor !'
+    exit 1
+fi
+
+mkdir sensor"$number"
+cd sensor"$number"
 
 echo -e "\n\n========= creat Filament_config.sh ==========="
 sleep 1
@@ -60,15 +69,18 @@ echo "sensor="$sensor"" >> Filament_config.sh
 echo "pin="$pin"" >> Filament_config.sh
 
 echo "#######Config End#########" >> Filament_config.sh
+
+cp -l /home/pi/filament_runout_Repetier/filament.sh filament"$number".sh
+
 sleep 1
-chmod 755 filament.sh
+chmod 755 filament"$number".sh
 chmod 755 Filament_config.sh
 
 echo -e "\n\n========= installation autostart ==========="
 
-crontab -u pi -l | grep -v 'sh /home/pi/filament_runout_Repetier/filament.sh &'  | crontab -u pi -
+crontab -u pi -l | grep -v "cd /home/pi/filament_runout_Repetier/sensor"$number" && sh filament"$number".sh  &"  | crontab -u pi -
 sleep 1
-(crontab -u pi -l ; echo "@reboot sh /home/pi/filament_runout_Repetier/filament.sh &") | crontab -u pi -
+(crontab -u pi -l ; echo "@reboot cd /home/pi/filament_runout_Repetier/sensor"$number" && sh filament"$number".sh  &") | crontab -u pi -
 
 echo -e "\n\n========= installation end ==========="
 
