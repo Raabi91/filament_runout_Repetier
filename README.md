@@ -1,3 +1,24 @@
+# Attention
+
+V3 has some changes to use multiple Sensors wenn you will use  V2 or V1 then delete the old script complete
+the delete the old start scripts
+V1:
+```
+# Filament Rounout starten
+#sh /home/pi/filament_runout_Repetier/filament.sh &
+```
+
+form /ect/rc.local
+
+V2:
+'''
+#sh /home/pi/filament_runout_Repetier/filament.sh &
+'''
+from 
+'''
+#crontab -e
+'''
+
 # Filament Runout Script for Repetier Server for Raspberry PI
 
 I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin.
@@ -5,6 +26,7 @@ If ohter sensors work let me know ist
 
 ## Install:
 ```
+sudo apt install git
 git clone https://github.com/Raabi91/filament_runout_Repetier
 cd filament_runout_Repetier
 sh install_filament.sh
@@ -26,21 +48,14 @@ Sensor --> Is Your sensor (without Filament) normally closed use 0 or normally O
 
 Pin --> Gpio Pin where your sensor is connected (see [WiringPi_Pinout.md](https://github.com/Raabi91/filament_runout_Repetier/blob/master/WiringPi_Pinout.md) use wPI column for pin number )
 
+number  --> Number or Name to to distinguish the sensors (every sensor must have a unique id)
+
 wait a moment the automatic startup will now set automaticly
 
 then reboot the pi
 ```
 sudo reboot
 ```
-
-if you have the first Version and use the new install_filament.sh pleas delete this line's:
-
-```
-# Filament Rounout starten
-#sh /home/pi/filament_runout_Repetier/filament.sh &
-```
-
-form /ect/rc.local
 
 ## How Upgrade the script
 ```
@@ -52,9 +67,14 @@ sudo reboot
 
 
 ## How Edit my Server and sensor config
+
+Put at "Sensorname" the name of the sensor waht do you use under number in the installation script
+
 ```
-sudo nano /home/pi/filament_runout_Repetier/Filament_config.sh
+sudo nano /home/pi/filament_runout_Repetier/"Sensornumber"/Filament_config.sh
+
 ```
+or use Ftp and search the file to edit and reupload it. the path is /home/pi/filament_runout_Repetier/"Sensornumber"/
 
 After Edit the Config do a Reboot
 
