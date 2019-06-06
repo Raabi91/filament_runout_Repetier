@@ -49,8 +49,8 @@ if [ -z "$number" ] ; then
     exit 1
 fi
 
-mkdir sensor"$number"
-cd sensor"$number"
+mkdir sensor_"$number"
+cd sensor_"$number"
 
 echo -e "\n\n========= creat Filament_config.sh ==========="
 sleep 1
@@ -78,9 +78,9 @@ chmod 755 Filament_config.sh
 
 echo -e "\n\n========= installation autostart ==========="
 
-crontab -u pi -l | grep -v "cd /home/pi/filament_runout_Repetier/sensor"$number" && sh filament"$number".sh  &"  | crontab -u pi -
+crontab -u pi -l | grep -v "cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament"$number".sh  &"  | crontab -u pi -
 sleep 1
-(crontab -u pi -l ; echo "@reboot cd /home/pi/filament_runout_Repetier/sensor"$number" && sh filament"$number".sh  &") | crontab -u pi -
+(crontab -u pi -l ; echo "@reboot cd /home/pi/filament_runout_Repetier/sensor_"$number" && sh filament"$number".sh  &") | crontab -u pi -
 
 echo -e "\n\n========= installation end ==========="
 
