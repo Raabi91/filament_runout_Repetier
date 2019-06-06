@@ -56,6 +56,15 @@ then reboot the pi
 ```
 sudo reboot
 ```
+## Install a other sensor:
+```
+cd filament_runout_Repetier
+sh install_filament.sh
+```
+Input your settings like the first installation
+```
+sudo reboot
+```
 
 ## How Upgrade the script
 ```
@@ -65,6 +74,17 @@ git pull
 sudo reboot
 ```
 
+## How delete a sensor:
+```
+crontab -e
+```
+an delete the line who is for the sensor. 
+The can you delete the folder for the sensor to in /home/pi/filament_runout_Repetier/
+
+after all make a
+```
+sudo reboot
+```
 
 ## How Edit my Server and sensor config
 
