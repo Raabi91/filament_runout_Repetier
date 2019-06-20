@@ -23,7 +23,7 @@ crontab -e
 # Filament Runout Script for Repetier Server for Raspberry PI
 
 I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin.
-If ohter sensors work let me know ist
+At a 3 wire sensor you need to put the 3 cabels on 5v, GND and an GPIO
 
 ## Install:
 ```
