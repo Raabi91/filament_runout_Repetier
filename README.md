@@ -26,6 +26,14 @@ I Use a 2 wire Endstop Sensor. 1 Wire is on GND the second wire is on A GPIO Pin
 At a 3 wire sensor you need to put the 3 cabels on 5v, GND and an GPIO
 
 ## Install:
+
+if you use a raspberry pi 4 do a manuel install off wiringpi 2.52 with
+```
+cd /tmp
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+```
+then install the script
 ```
 sudo apt install git
 git clone https://github.com/Raabi91/filament_runout_Repetier
@@ -54,14 +62,6 @@ number  --> Number or Name to to distinguish the sensors (every sensor must have
 
 
 wait a moment the automatic startup will now set automaticly
-
-
-if you use a raspberry pi 4 do a manuel upgrade to wiringpi 2.52 with
-```
-cd /tmp
-wget https://project-downloads.drogon.net/wiringpi-latest.deb
-sudo dpkg -i wiringpi-latest.deb
-```
 
 then reboot the pi
 ```
